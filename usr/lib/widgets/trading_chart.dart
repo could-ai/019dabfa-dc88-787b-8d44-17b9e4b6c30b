@@ -171,7 +171,7 @@ class _TradingChartState extends State<TradingChart> {
                   ],
                   lineTouchData: LineTouchData(
                     touchTooltipData: LineTouchTooltipData(
-                      tooltipBgColor: const Color(0xFF161B22),
+                      getTooltipColor: (touchedSpot) => const Color(0xFF161B22),
                       getTooltipItems: (touchedSpots) {
                         return touchedSpots.map((spot) {
                           return LineTooltipItem(
